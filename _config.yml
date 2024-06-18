@@ -1,0 +1,7 @@
+title: "Eon Project"
+collections_dir: content
+
+collections:
+  blogposts:
+    output: true
+    permalink: /blog/:path/
