@@ -1,8 +1,10 @@
+{ include _header.hmtl }
 <h2>Eon Project</h2>
 <ul>
   {% for blogpost in site.blogposts %}
-    <li>
+    <div class="uk-card uk-padding">
       <h2>{{ blogpost.title }}</h2>
-    </li>
+    </div>
   {% endfor %}
 </ul>
+{ include _footer.hmtl }
