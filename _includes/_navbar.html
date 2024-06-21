@@ -1,23 +1,71 @@
-<nav class="uk-navbar-transparent uk-navbar" data-uk-navbar="">
-    <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">Eon Project</a>
+
+<!-- NAVBAR -->
+ <header>
+    <div class="uk-container">
+        <nav class="uk-navbar-transparent uk-navbar" data-uk-navbar="">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Eon Project</a>
+            </div>
+            <div class="uk-navbar-center uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" role="button" aria-haspopup="true">Codex
+                            <span data-uk-icon="icon: triangle-down" class="uk-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <polygon points="5 7 15 7 10 12"></polygon>
+                                </svg>
+                            </span>
+                            </a>
+                        <div class="uk-navbar-dropdown uk-drop">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Skills</a></li>
+                                <li><a href="#">Eons</a></li>
+                                <li><a href="#">Items</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Media</a>
+                    </li>
+                    <li>
+                        <a href="#">Staff</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <div class="uk-navbar-center uk-visible@m">
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Home</a></li>
+</header>
+<!-- /NAVBAR --> 
+<!-- OFFCANVAS -->
+ <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas uk-offcanvas-overlay uk-open" tabindex="-1" style="display: block;">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide" role="dialog" aria-modal="true" style="max-width: 744px;">
+        <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close="" aria-label="Close"><svg width="14" height="14" viewBox="0 0 14 14"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+        <ul class="uk-nav uk-nav-default">
             <li>
-                <a href="#" role="button" aria-haspopup="true">Collections <span data-uk-icon="icon: triangle-down" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20"><polygon points="5 7 15 7 10 12"></polygon></svg></span></a>
-                <div class="uk-navbar-dropdown uk-drop" style="top: 95px; left: 83.2812px; max-width: 1106px;">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Items</a></li>
-                        <li><a href="#">Eons</a></li>
-                    </ul>
-                </div>
+                <a href="#">Home</a>
             </li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Staff</a></li>
+            <li class="uk-parent">
+                <a href="#">Codex</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Eons</a></li>
+                    <li><a href="#">Items</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Media</a>
+            </li>
+            <li>
+                <a href="#">Staff</a>
+            </li>          
         </ul>
     </div>
-</nav>
+</div>
+<!-- /OFFCANVAS -->
